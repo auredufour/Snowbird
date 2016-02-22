@@ -1,0 +1,31 @@
+html {
+	font-size: 62.5%;
+}
+
+.wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 10rem;
+	font-size: 1rem;
+	text-align: center;
+@media (max-width: 830px){
+	padding: 0 1rem;
+}
+
+}
+
+section{
+	font-size: 4rem;
+}
+
+.background {
+	padding-top: 5rem;
+	background: linear-gradient(#9D5EFF, #614487); 
+
+}
+
+@import "_normalize";
+@import "_header";
+@import "_userWeather";
+@import "_whereToGo";
+@import "_answer";

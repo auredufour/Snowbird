@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snowbird</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" href="assets/icon.png">
+
+</head>
+<body>
+	<div class="background">
+		<header>
+			<div class="wrapper">
+				<h1>Snowbird</h1>
+				<!-- <p>a good reason to go away</p> -->
+			</div>
+		</header>
+		<section class="userWeather">
+			<div class="wrapper">
+			<div class= "flex">
+				<div class="iconWeather"></div>
+				<div class="tempWeather">
+					<p class="temp"><span class="temp_c"></span>º</p>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="locationWeather">
+					<p class="weatherObs"></p>
+					<p class="cityName"></p>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="whereToGo">
+		<div class="wrapper">
+		<form action="">
+		<div class="flex">
+			<label for=""><input type="radio" name= "weather" value="-10" required> Colder</label>
+			<label for=""><input type="radio" name= "weather" value="0"> Cold</label>
+			<label for=""><input type="radio" name= "weather" value="10"> Warm</label>
+			<label for=""><input type="radio" name= "weather" value="20">Warmer</label>
+		</div>
+		<div class="flex">
+			<input class="buttonAnswer" type="submit" value="Take me on a trip somewhere nicer">
+			</div>
+		</div>
+		</section>
+	</div>
+		<section class="answer">
+		<div class="flex answer">
+		</div>
+		<input class="buttonAnswer" type="submit" value="Or somewhere else" >
+		<span class="two">hello</span>
+
+		</form>
+		</section>
+		</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="weatherBapp.js"></script>
+</body>
+</html>

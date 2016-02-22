@@ -1,0 +1,79 @@
+.userWeather .flex {
+
+	width: 70%;
+	display: flex;
+	flew-flow: row wrap;
+	color: #fff;
+	text-align: center;
+	font-size: 7rem;
+	margin: 0 auto;
+
+@media (max-width: 630px){
+	flex-flow: column;
+}
+
+	.iconWeather, .tempWeather{
+		flex: 1 0 50%;
+		display: flex;
+
+@media (max-width: 630px){
+		flex: 1 0 100%;
+}
+		img{
+			width: 80%;
+			height: 100%;
+			margin: auto;
+			padding: 6rem 3rem;
+
+		}
+	}
+
+	.temp {
+		font-size: 7.5rem;
+		padding-top: 0;
+		margin-top: 0; 
+		font-family: "Roboto Condensed";
+
+@media (max-width: 730px){
+	padding: 3rem 0;
+}
+
+		span {
+			font-size: 8rem;
+		}
+	}
+
+	.iconWeather {
+		background: #7036BB;
+	}
+
+	.tempWeather {
+		background: #7C40C9;
+		display: flex;
+
+		p {
+			margin: auto;
+		}
+	}
+
+	.locationWeather{
+		flex: 1 0 100%;
+		background: #9251E5;
+	}
+
+	.weatherObs {
+		font-size: 5rem;
+		padding: 5rem 0 0;
+		margin: 0;
+		font-family: "Roboto Condensed";
+		}
+
+		.cityName{
+			font-size: 3rem;
+			padding-top: 1rem;
+			font-family: "Roboto Condensed";
+			margin: 0;
+			font-weight: 300;
+			padding-bottom: 4rem;
+	}
+}

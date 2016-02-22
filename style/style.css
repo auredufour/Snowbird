@@ -1,0 +1,638 @@
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 830px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
+
+section {
+  font-size: 4rem;
+}
+
+.background {
+  padding-top: 5rem;
+  background: linear-gradient(#9D5EFF, #614487);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  color: #fff;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 2rem 0 7rem;
+  font-size: 8rem;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+}
+
+@media (max-width: 565px) {
+  header h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 565px) {
+  header h1 {
+    font-size: 4.5rem;
+  }
+}
+
+.userWeather .flex {
+  width: 70%;
+  display: flex;
+  flew-flow: row wrap;
+  color: #fff;
+  text-align: center;
+  font-size: 7rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 630px) {
+  .userWeather .flex {
+    flex-flow: column;
+  }
+}
+
+.userWeather .flex .iconWeather, .userWeather .flex .tempWeather {
+  flex: 1 0 50%;
+  display: flex;
+}
+
+@media (max-width: 630px) {
+  .userWeather .flex .iconWeather, .userWeather .flex .tempWeather {
+    flex: 1 0 100%;
+  }
+}
+
+.userWeather .flex .iconWeather img, .userWeather .flex .tempWeather img {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 6rem 3rem;
+}
+
+.userWeather .flex .temp {
+  font-size: 7.5rem;
+  padding-top: 0;
+  margin-top: 0;
+  font-family: "Roboto Condensed";
+}
+
+@media (max-width: 730px) {
+  .userWeather .flex .temp {
+    padding: 3rem 0;
+  }
+}
+
+.userWeather .flex .temp span {
+  font-size: 8rem;
+}
+
+.userWeather .flex .iconWeather {
+  background: #7036BB;
+}
+
+.userWeather .flex .tempWeather {
+  background: #7C40C9;
+  display: flex;
+}
+
+.userWeather .flex .tempWeather p {
+  margin: auto;
+}
+
+.userWeather .flex .locationWeather {
+  flex: 1 0 100%;
+  background: #9251E5;
+}
+
+.userWeather .flex .weatherObs {
+  font-size: 5rem;
+  padding: 5rem 0 0;
+  margin: 0;
+  font-family: "Roboto Condensed";
+}
+
+.userWeather .flex .cityName {
+  font-size: 3rem;
+  padding-top: 1rem;
+  font-family: "Roboto Condensed";
+  margin: 0;
+  font-weight: 300;
+  padding-bottom: 4rem;
+}
+
+.whereToGo {
+  margin: 5rem auto 0;
+  width: 72%;
+  padding: 1rem;
+}
+
+.whereToGo .flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 800px) {
+  .whereToGo {
+    width: 75%;
+  }
+}
+
+@media (max-width: 450px) {
+  .whereToGo {
+    flew-direction: row;
+  }
+}
+
+.whereToGo label, .whereToGo input[type=submit] {
+  margin: 2rem 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem 2rem 2rem 1.2rem;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+}
+
+.whereToGo label ::-webkit-input-placeholder, .whereToGo input[type=submit] ::-webkit-input-placeholder {
+  outline: none;
+}
+
+.whereToGo label input:focus, .whereToGo label input[type=submit]:focus, .whereToGo label input[type=submit]:active, .whereToGo input[type=submit] input:focus, .whereToGo input[type=submit] input[type=submit]:focus, .whereToGo input[type=submit] input[type=submit]:active {
+  outline: none;
+  border: 0;
+}
+
+.whereToGo label {
+  flex: 1 0 20%;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 785px) {
+  .whereToGo label {
+    flex: 1 0 45%;
+  }
+}
+
+@media (max-width: 530px) {
+  .whereToGo label {
+    flex: 1 0 100%;
+    margin: 0 0 2rem;
+  }
+}
+
+.whereToGo label:hover {
+  transition: 0.5s;
+  color: #5F5F5F;
+}
+
+.whereToGo label:first-child:hover {
+  background-color: #9D5EFF;
+  color: #fff;
+  font-weight: 400;
+}
+
+.whereToGo label:nth-child(2):hover {
+  background-color: #985CF6;
+  color: #fff;
+  font-weight: 400;
+}
+
+.whereToGo label:nth-child(3):hover {
+  background-color: #7E51C1;
+  color: #fff;
+  font-weight: 400;
+}
+
+.whereToGo label:last-child:hover {
+  background-color: #614487;
+  color: #fff;
+  font-weight: 400;
+}
+
+.whereToGo input[type=submit] {
+  flex: 1 0 100%;
+  margin: 2rem auto 5rem;
+}
+
+.whereToGo input[type=submit]:hover {
+  background-color: #FD5D3B;
+  color: #fff;
+  transition: 0.5s;
+  font-weight: 400;
+}
+
+.whereToGo input {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+}
+
+.answer {
+  background-color: #FD5D3B;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
+.answer h3, .answer p {
+  margin: 0;
+}
+
+.answer p.quote {
+  color: #5F5F5F;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  padding: 12rem 0 2rem;
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+}
+
+@media (max-width: 850px) {
+  .answer p.quote {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .answer p.quote {
+    font-size: 1.3rem;
+  }
+}
+
+.answer h3 {
+  font-size: 9.5rem;
+  letter-spacing: 0.5rem;
+  font-family: "Playfair Display";
+}
+
+@media (max-width: 850px) {
+  .answer h3 {
+    font-size: 8.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .answer h3 {
+    font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .answer h3 {
+    font-size: 5rem;
+    padding: 0 1rem;
+  }
+}
+
+.answer .flexAnswer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin: 5rem auto;
+  padding: 0;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .answer .flexAnswer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .answer .flexAnswer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .answer .flexAnswer {
+    width: 50%;
+  }
+}
+
+.answer .imgAnswer, .answer .tempAnswer {
+  flex: 1 0 25%;
+  display: flex;
+  padding: 0;
+}
+
+@media (max-width: 850px) {
+  .answer .imgAnswer, .answer .tempAnswer {
+    flex: 1 0 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .answer .imgAnswer, .answer .tempAnswer {
+    flex: 1 0 100%;
+  }
+}
+
+.answer .imgAnswer img, .answer .tempAnswer img {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 3rem;
+}
+
+@media (max-width: 500px) {
+  .answer .imgAnswer img, .answer .tempAnswer img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .answer .imgAnswer img, .answer .tempAnswer img {
+    width: 70%;
+  }
+}
+
+.answer .imgAnswer p, .answer .tempAnswer p {
+  margin: auto;
+  font-family: "Roboto Condensed";
+  font-size: 5rem;
+  padding: 2.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .answer .imgAnswer p, .answer .tempAnswer p {
+    padding: 4rem 0;
+  }
+}
+
+.answer .plane {
+  flex: 1 0 18%;
+  display: flex;
+}
+
+.answer .plane img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+
+@media (max-width: 800px) {
+  .answer .plane img {
+    width: 70%;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+.answer .imgAnswer {
+  background-color: #CB3718;
+}
+
+.answer .tempAnswer {
+  background-color: #DB3C1A;
+}
+
+.answer .priceAnswer, .answer .plane {
+  background-color: #EC431F;
+}
+
+.answer .priceAnswer {
+  flex: 1 0 32%;
+  display: flex;
+}
+
+.answer .priceAnswer p {
+  margin: auto;
+  font-size: 5rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 600px) {
+  .answer .priceAnswer p {
+    padding: 4rem 0;
+  }
+}
+
+.answer input[type=submit] {
+  margin: 2rem 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  outline: none;
+  border: none;
+}
+
+.answer ::-webkit-input-placeholder {
+  outline: none;
+}
+
+.answer input[type=submit]:focus, .answer input[type=submit]:active {
+  outline: none;
+  border: 0;
+}
+
+.answer input[type=submit]:hover {
+  background-color: #7E51C1;
+  color: #fff;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.answer span {
+  margin: 0 auto;
+  color: transparent;
+  display: block;
+}

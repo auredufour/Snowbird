@@ -1,0 +1,103 @@
+.whereToGo {
+	margin: 5rem auto 0;
+	width: 72%;
+	padding: 1rem;
+	
+	.flex {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	@media (max-width: 800px){
+			width: 75%;
+	}
+
+	@media (max-width: 450px){
+		flew-direction: row;
+	}
+
+	label, input[type=submit] {
+		margin: 2rem 0.5rem;
+		background-color: #fff;
+		border-radius: 0.5rem;
+		text-align: center;
+		padding: 2rem 2rem 2rem 1.2rem;
+		font-size: 1.5rem;
+		font-family: "Roboto Condensed";
+		font-weight: 300;
+
+
+		::-webkit-input-placeholder {
+		outline: none;
+		}
+
+		input:focus, input[type=submit]:focus, input[type=submit]:active{
+		outline: none;
+		border: 0;
+		}
+	}
+
+	label {
+		flex: 1 0 20%;
+		margin-bottom: 5rem;
+@media (max-width: 785px){
+		flex: 1 0 45%;
+}
+@media (max-width: 530px){
+		flex: 1 0 100%;
+		margin:0 0 2rem;
+
+	}
+
+
+	}
+
+	label:hover {
+		transition: 0.5s;
+		color: #5F5F5F;	
+	}
+
+	label:first-child:hover{
+		background-color: #9D5EFF;
+		color: #fff;
+		font-weight: 400;
+	}
+
+	label:nth-child(2):hover{
+		background-color: #985CF6;
+		color: #fff;
+		font-weight: 400;
+	}
+
+	label:nth-child(3):hover{
+		background-color: #7E51C1;
+		color: #fff;
+		font-weight: 400;
+	}
+
+	label:last-child:hover{
+		background-color: #614487;
+		color: #fff;
+		font-weight: 400;
+	}
+
+	input[type=submit] {
+		flex: 1 0 100%;
+		margin: 2rem auto 5rem;
+
+	}
+	input[type=submit]:hover {
+		background-color: #FD5D3B;
+		color: #fff;
+		transition: 0.5s;
+		font-weight: 400;
+	} 
+
+	input {
+		margin-right: 0.5rem; 
+		font-size: 2rem;
+		outline: none;
+		border: none;
+
+	}
+
+}
