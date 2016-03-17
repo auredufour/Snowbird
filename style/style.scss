@@ -1,3 +1,6 @@
+$red: #FD5D3B;
+$grey: #5F5F5F;
+
 html {
 	font-size: 62.5%;
 }
@@ -29,3 +32,5 @@ section{
 @import "_userWeather";
 @import "_whereToGo";
 @import "_answer";
+@import "_footer";
+@import "_loading";

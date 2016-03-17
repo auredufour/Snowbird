@@ -106,7 +106,7 @@ weatherUser.init = function() {
 	var weatherCities = {};
 	weatherCities.apiKey = '58a484fefee32b589c92e9a4d1f13d09';
 	weatherCities.apiUrl = 'http://api.openweathermap.org/data/2.5/group/';
-	weatherCities.cities = [2988507, 1850147, 5128638, 3448439, 1835848, 3530597, 1853908, 1275339, 360630, 5368361, 3435910, 524901, 1796236, 745044, 1816670, 4887398, 2643743, 112931, 3688689, 1609350, 993800, 98182, 3117735, 6540586, 2147714, 2158177, 292223, 6173331, 6077243, 2950159, 5856195, 4335045, ];
+	weatherCities.cities = [2988507, 1850147, 5128638, 3448439, 1835848, 3530597, 1853908, 1275339, 360630, 5368361, 3435910, 524901, 1796236, 745044, 1816670, 4887398, 2643743, 112931, 3688689, 1609350, 993800, 98182, 3117735, 6540586, 2147714, 2158177, 292223, 6173331, 6077243, 5526233, 3172394, 3168673, 3374766, 5855802, 6355126, 4160812, 6453366, 3180864, 3179559, 3176949, 2950159];
 
 	weatherCities.temp = [];
 
@@ -353,6 +353,11 @@ var travelInfo = $('<div>')
 		};
 	});
 };
+	// $('.clear').on('click', function(e){
+	// 	e.preventDefault();
+	// 	$('form').html('');
+	// });
+
 
 rome2rio.init = function(){
 	// rome2rio.getInfo();
@@ -360,8 +365,8 @@ rome2rio.init = function(){
 
 
 $(function(){
-	$(".fadeIn").delay( 4075 ).fadeIn( 800 );
-	$(".loader").delay( 4075 ).fadeOut( 800 );
+	$(".fadeIn").delay( 4050 ).fadeIn( 800 );
+	$(".loader").delay( 4050 ).fadeOut( 800 );
 	weatherUser.init();
 	rome2rio.init();
 	weatherCities.init();

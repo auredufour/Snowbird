@@ -1,5 +1,4 @@
 .userWeather .flex {
-
 	width: 70%;
 	display: flex;
 	flew-flow: row wrap;
@@ -9,15 +8,15 @@
 	margin: 0 auto;
 
 @media (max-width: 630px){
-	flex-flow: column;
+	display: block;
 }
 
 	.iconWeather, .tempWeather{
-		flex: 1 0 50%;
+		width: 50%;
 		display: flex;
 
 @media (max-width: 630px){
-		flex: 1 0 100%;
+		width: 100%;
 }
 		img{
 			width: 80%;
@@ -76,4 +75,8 @@
 			font-weight: 300;
 			padding-bottom: 4rem;
 	}
+}
+
+.fadeIn {
+	display: none;
 }

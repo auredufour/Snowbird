@@ -1,50 +1,49 @@
 .answer {
-
-	background-color: #FD5D3B;
+	display: none;
+	margin: 0 auto;
+	padding-bottom: 4rem;
 	text-align: center;
 	color: #fff;
-	margin: 0 auto;
-	text-align: center;
-	display: none;
-
-
+	background-color: $red;
 
 	h3, p {
 		margin: 0;
 	}
 
 	p.quote {
-		color: #5F5F5F;
-		font-size: 2rem;
-		letter-spacing: 0.4rem;
 		padding: 12rem 0 2rem;
 		font-family: "Roboto Condensed";
+		color: $grey;
+		font-size: 2rem;
+		letter-spacing: 0.4rem;
 		text-transform: uppercase;
 
 		@media (max-width: 850px){
 		font-size: 1.5rem;
 		}
+
 		@media (max-width: 750px){
 		font-size: 1.3rem;
 		}
-
 	}
 
 	h3 {
+		font-family: "Playfair Display";
 		font-size: 9.5rem;
 		letter-spacing: 0.5rem;
-		font-family: "Playfair Display";
 	@media (max-width: 850px){
 		font-size: 8.5rem;
 	}
+
 	@media (max-width: 850px){
 		font-size: 7.5rem;
 	}
+
 	@media (max-width: 750px){
 		font-size: 5rem;
 		padding: 0 1rem;
 	}
-	}
+}
 
 	.flexAnswer {
 		display: flex;
@@ -57,9 +56,11 @@
 	@media (max-width: 800px){
 		width: 70%;
 	}
+
 	@media (max-width: 600px){
-		flex-direction: column;
+		display: block;
 	}
+
 	@media (max-width: 500px){
 		width: 50%;
 	}
@@ -73,10 +74,10 @@
 	@media (max-width: 850px){
 		flex: 1 0 50%;
 	}
-	@media (max-width: 600px){
-		flex: 1 0 100%;
-	}
 
+	@media (max-width: 600px){
+		width: 100%;
+	}
 
 		img {
 			width: 80%;
@@ -85,24 +86,25 @@
 			padding: 3rem;
 
 		@media (max-width: 500px){
-			width: 50%;
+			width: 40%;
 		}
+
 		@media (max-width: 400px){
 			width: 70%;
 		}
-		}
+	}
 
 		p {
 			margin: auto;
 			font-family: "Roboto Condensed";
 			font-size: 5rem;
 			padding: 2.5rem 0;
+
 		@media (max-width: 600px){
 			padding: 4rem 0;
 		}
-
-		}
-	} 
+	}
+} 
 
 	.plane {
 		flex: 1 0 18%;
@@ -121,11 +123,9 @@
 			width: 70%;
 			margin: 0 auto;
 			padding: 0 2rem;
-
-
 		}
 	}
-	}
+}
 	.imgAnswer {
 		background-color: #CB3718;
 	}
@@ -136,8 +136,8 @@
 
 	.priceAnswer, .plane {
 		background-color: #EC431F;
-
 	}
+
 	.priceAnswer {
 		flex: 1 0 32%;
 		display: flex;
@@ -146,11 +146,12 @@
 			margin: auto;
 			font-size: 5rem;
 			padding: 2rem 0;
+
 		@media (max-width: 600px){
 			padding: 4rem 0;
 		}
-		}
 	}
+}
 
 	input[type=submit] {
 		margin: 2rem 0.5rem;

@@ -206,6 +206,8 @@ header h1 {
   font-family: "Playfair Display";
   font-weight: 900;
   letter-spacing: 0.4rem;
+  position: relative;
+  z-index: 1000;
 }
 
 @media (max-width: 565px) {
@@ -232,18 +234,18 @@ header h1 {
 
 @media (max-width: 630px) {
   .userWeather .flex {
-    flex-flow: column;
+    display: block;
   }
 }
 
 .userWeather .flex .iconWeather, .userWeather .flex .tempWeather {
-  flex: 1 0 50%;
+  width: 50%;
   display: flex;
 }
 
 @media (max-width: 630px) {
   .userWeather .flex .iconWeather, .userWeather .flex .tempWeather {
-    flex: 1 0 100%;
+    width: 100%;
   }
 }
 
@@ -305,6 +307,10 @@ header h1 {
   padding-bottom: 4rem;
 }
 
+.fadeIn {
+  display: none;
+}
+
 .whereToGo {
   margin: 5rem auto 0;
   width: 72%;
@@ -324,7 +330,7 @@ header h1 {
 
 @media (max-width: 450px) {
   .whereToGo {
-    flew-direction: row;
+    display: block;
   }
 }
 
@@ -361,7 +367,7 @@ header h1 {
 
 @media (max-width: 530px) {
   .whereToGo label {
-    flex: 1 0 100%;
+    width: 100%;
     margin: 0 0 2rem;
   }
 }
@@ -396,7 +402,7 @@ header h1 {
 }
 
 .whereToGo input[type=submit] {
-  flex: 1 0 100%;
+  width: 100%;
   margin: 2rem auto 5rem;
 }
 
@@ -415,12 +421,12 @@ header h1 {
 }
 
 .answer {
-  background-color: #FD5D3B;
+  display: none;
+  margin: 0 auto;
+  padding-bottom: 4rem;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
-  text-align: center;
-  display: none;
+  background-color: #FD5D3B;
 }
 
 .answer h3, .answer p {
@@ -428,11 +434,11 @@ header h1 {
 }
 
 .answer p.quote {
+  padding: 12rem 0 2rem;
+  font-family: "Roboto Condensed";
   color: #5F5F5F;
   font-size: 2rem;
   letter-spacing: 0.4rem;
-  padding: 12rem 0 2rem;
-  font-family: "Roboto Condensed";
   text-transform: uppercase;
 }
 
@@ -449,9 +455,9 @@ header h1 {
 }
 
 .answer h3 {
+  font-family: "Playfair Display";
   font-size: 9.5rem;
   letter-spacing: 0.5rem;
-  font-family: "Playfair Display";
 }
 
 @media (max-width: 850px) {
@@ -490,7 +496,7 @@ header h1 {
 
 @media (max-width: 600px) {
   .answer .flexAnswer {
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -514,7 +520,7 @@ header h1 {
 
 @media (max-width: 600px) {
   .answer .imgAnswer, .answer .tempAnswer {
-    flex: 1 0 100%;
+    width: 100%;
   }
 }
 
@@ -527,7 +533,7 @@ header h1 {
 
 @media (max-width: 500px) {
   .answer .imgAnswer img, .answer .tempAnswer img {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -635,4 +641,80 @@ header h1 {
   margin: 0 auto;
   color: transparent;
   display: block;
+}
+
+footer {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: #FD5D3B;
+  background: linear-gradient(#614487, #411F6F);
+}
+
+footer .footer-text, footer .apiLogo {
+  flex: 1 0 50%;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FD5D3B;
+}
+
+footer .apiLogo {
+  padding: 0 3rem;
+}
+
+footer img {
+  max-width: 5rem;
+  margin: 0 2rem;
+}
+
+footer img:first-child {
+  max-width: 4rem;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  height: 100vh;
+  top: 0;
+  background: linear-gradient(#9D5EFF, #614487);
+}
+
+.loader img {
+  position: absolute;
+  max-width: 10%;
+  margin-left: 45%;
+  margin-top: 25%;
+  transform: translateX(-50%);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .loader img {
+    max-width: 25%;
+    margin-top: 65%;
+    margin-left: 40%;
+    transform: translateX(-50%);
+  }
 }

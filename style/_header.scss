@@ -1,7 +1,6 @@
 header {
-
 		color: #fff;
-	h1{
+	h1 {
 		margin: 0 auto;
 		padding: 2rem 0 7rem;
 		font-size: 8rem;
@@ -9,6 +8,8 @@ header {
 		font-family: "Playfair Display";
 		font-weight: 900;
 		letter-spacing: 0.4rem;
+		position: relative;
+		z-index: 1000;
 @media (max-width: 565px){
 	font-size: 6rem;
 }

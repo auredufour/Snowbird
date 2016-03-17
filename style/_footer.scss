@@ -1,0 +1,33 @@
+footer {
+	display: flex;
+	padding: 2rem;
+	justify-content: space-around;
+	align-items: flex-end;
+	color: #FD5D3B;
+	background: linear-gradient(#614487, #411F6F);
+
+	.footer-text, .apiLogo {
+	flex: 1 0 50%;
+	}
+	p {
+		font-size: 1.2rem;
+		text-align: right;
+	}
+	p:last-child{
+		margin-bottom: 0;
+	}
+	a {
+		text-decoration: none;
+		color: #FD5D3B;
+	}
+	.apiLogo{
+		padding: 0 3rem;
+	}
+	img {
+		max-width: 5rem;
+		margin: 0 2rem;
+	}
+	img:first-child{
+		max-width: 4rem;
+	}
+}
